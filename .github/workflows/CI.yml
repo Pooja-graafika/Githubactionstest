@@ -66,4 +66,4 @@ jobs:
            echo "Container ID: $CONTAINER_ID"
 
            sleep 10
-           docker ps
+           docker ps -a
