@@ -36,7 +36,7 @@ jobs:
 
             cd JtProject/
 
-            mvn clean install -DskipUnitTests
+            mvn clean install -DskipTests
 
       # - name: Log Maven build output
 
