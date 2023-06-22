@@ -46,7 +46,12 @@ jobs:
 
       - name: Build Docker image
 
-        run: docker build -t myapp:latest .
+        run: |
+
+            cd JtProject/
+
+
+            docker build -t myapp:latest .
 
       - name: Log Docker image details
 
