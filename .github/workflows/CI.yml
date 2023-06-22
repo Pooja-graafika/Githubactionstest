@@ -38,18 +38,18 @@ jobs:
 
             mvn clean install -DskipTests
 
-      # - name: Log Maven build output
+      - name: Log Maven build output
 
-      #   run: cat target/build.log
+        run: cat target/build.log
 
-      # - name: Log Docker version
+      - name: Log Docker version
 
-      #   run: docker version
+        run: docker version
 
-      # - name: Build Docker image
+      - name: Build Docker image
 
-      #   run: docker build -t myapp:latest .
+        run: docker build -t myapp:latest .
 
-      # - name: Log Docker image details
+      - name: Log Docker image details
 
-      #   run: docker images
+        run: docker images
