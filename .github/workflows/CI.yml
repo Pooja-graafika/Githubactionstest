@@ -28,7 +28,7 @@ jobs:
         with:
 
           java-version: 11
-          distribution : 'adapt'
+          distribution : 'adopt'
 
       # - name: Build with Maven
 
