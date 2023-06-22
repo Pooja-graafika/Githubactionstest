@@ -56,3 +56,14 @@ jobs:
       - name: Log Docker image details
 
         run: docker images
+      
+      - name: Run Docker container
+
+        run: |
+
+           CONTAINER_ID=$(docker run -d -p 8080:8080 -v $PWD/JtProject/target:/app myapp:latest)
+
+           echo "Container ID: $CONTAINER_ID"
+
+           sleep 10
+           docker ps
