@@ -66,4 +66,5 @@ jobs:
            echo "Container ID: $CONTAINER_ID"
 
            sleep 10
-           docker ps -a
+           docker ps -a 
+           docker logs $CONTAINER_ID > logs.txt
